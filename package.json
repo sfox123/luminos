@@ -1,0 +1,20 @@
+{
+  "name": "luminos",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Luminos website — Next.js (App Router) + React",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "data:oni": "node scripts/update-oni.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource/figtree": "^5.3.0",
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}
