@@ -8,6 +8,7 @@ import Partners from './Partners.jsx';
 import Services from './Services.jsx';
 import EnsoFeature from './EnsoFeature.jsx';
 import DemoDashboards from './DemoDashboards.jsx';
+import Projects from './Projects.jsx';
 import BeforeAfter from './BeforeAfter.jsx';
 import PipelineRunner from './PipelineRunner.jsx';
 import Approach from './Approach.jsx';
@@ -36,6 +37,7 @@ export default function Home() {
         <Services />
         <EnsoFeature onTryIt={tryEnso} />
         <DemoDashboards active={demo} setActive={setDemo} />
+        <Projects />
         <BeforeAfter />
         <PipelineRunner />
         <Approach />

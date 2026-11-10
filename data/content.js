@@ -165,3 +165,86 @@ export const mailto = (subject = 'New project enquiry', body = '') =>
   `mailto:${contact.email}?subject=${encodeURIComponent(subject)}${body ? `&body=${encodeURIComponent(body)}` : ''}`;
 
 export const tel = `tel:${contact.phone}`;
+
+// Client websites shown in the "Projects" section. Screenshots live in assets/projects/.
+// To add one: drop a 1200px-wide .webp in that folder, import it here and add an entry.
+import shotDmc from '../assets/projects/dmc-elnino.webp';
+import shotAyaan from '../assets/projects/ayaan-tours.webp';
+import shotBute from '../assets/projects/bute-construction.webp';
+import shotYslBuilders from '../assets/projects/ysl-builders.webp';
+import shotYslCivils from '../assets/projects/ysl-civils.webp';
+
+export const projects = [
+  {
+    id: 'dmc',
+    name: 'El Niño Preparedness Response',
+    client: 'Disaster Management Centre, Sri Lanka',
+    url: 'https://dmc-elnino.vercel.app/',
+    sector: 'Public sector',
+    country: 'Sri Lanka',
+    bg: '#0E1B38',
+    accent: '#E5B21F',
+    art: 'waves',
+    shot: shotDmc,
+    summary:
+      'A public information site explaining how El Niño affects Sri Lanka and the Maha season, with minutes and recordings from every national preparedness meeting.',
+    tags: ['Public information', 'Meeting archive', 'Live ENSO data'],
+  },
+  {
+    id: 'ayaan',
+    name: 'Ayaan Tours',
+    client: 'Private tours from Kandy',
+    url: 'https://www.ayaantours.com/',
+    sector: 'Travel',
+    country: 'Sri Lanka',
+    bg: '#13261C',
+    accent: '#F29A2E',
+    art: 'peaks',
+    shot: shotAyaan,
+    summary:
+      'A bookings-first site for a small Kandy tour team: multi-day trips, safari camping in Yala, Kumana and Wilpattu, day tours and airport transfers, with WhatsApp enquiries.',
+    tags: ['Tour catalogue', 'WhatsApp enquiries', 'SEO'],
+  },
+  {
+    id: 'bute',
+    name: 'Bute Construction',
+    client: 'Civil engineering contractor',
+    url: 'https://buteconstruction.co.uk/',
+    sector: 'Construction',
+    country: 'United Kingdom',
+    bg: '#141414',
+    accent: '#B7F000',
+    art: 'blueprint',
+    shot: shotBute,
+    summary: 'A bold, project-led site for a civil engineering firm, with a full-screen hero, project portfolio and sustainability pages.',
+    tags: ['Portfolio', 'Hero slider'],
+  },
+  {
+    id: 'ysl-builders',
+    name: 'YSL Builders',
+    client: 'Domestic and commercial builders',
+    url: 'https://yslbuilders.co.uk/',
+    sector: 'Construction',
+    country: 'United Kingdom',
+    bg: '#33384D',
+    accent: '#F07A5C',
+    art: 'skyline',
+    shot: shotYslBuilders,
+    summary: 'A brand site for a domestic and commercial building company, built around an illustrated city skyline.',
+    tags: ['Brand site', 'Illustration'],
+  },
+  {
+    id: 'ysl-civils',
+    name: 'YSL Civils',
+    client: 'Groundworks and RC frames',
+    url: 'https://yslcivils.co.uk/',
+    sector: 'Construction',
+    country: 'United Kingdom',
+    bg: '#1C2660',
+    accent: '#F28C28',
+    art: 'frame',
+    shot: shotYslCivils,
+    summary: 'A services site for a groundworks and reinforced concrete frame contractor, with service pages and quote requests.',
+    tags: ['Service pages', 'Quote requests'],
+  },
+];
